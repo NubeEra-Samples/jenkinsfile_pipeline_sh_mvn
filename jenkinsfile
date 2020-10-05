@@ -6,7 +6,7 @@ stage('Build')
 {
 steps{
 echo "Building the Code.........."
-System.exit(0)
+System.exit("0")
 bat "mvn clean"
 }
 }
@@ -14,7 +14,7 @@ stage('Test')
 {
 steps{
 echo "Testing the Code.........."
-System.exit(0)
+System.exit("0")
 bat "mvn test"
 }
 }
@@ -22,7 +22,7 @@ stage('Compile')
 {
 steps{
 echo "Compiling the Project.........."
-System.exit(0)
+System.exit("0")
 bat "mvn compile"
 }
 }
